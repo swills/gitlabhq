@@ -46,7 +46,7 @@ module Gitlab
       # https://github.com/rails/rails/blob/master/activesupport/lib/active_support/values/time_zone.rb
       def try_parse_cron(cron, cron_timezone)
         cron_line = Rufus::Scheduler.parse("#{cron} #{cron_timezone}")
-        cron_line if cron_line.is_a?(Rufus::Scheduler::CronLine)
+        cron_line unless cron_line.nil?
       rescue
         # noop
       end
