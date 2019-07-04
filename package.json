@@ -16,7 +16,9 @@
     "prettier-all": "node ./scripts/frontend/prettier.js check-all",
     "prettier-all-save": "node ./scripts/frontend/prettier.js save-all",
     "webpack": "webpack --config config/webpack.config.js",
-    "webpack-prod": "NODE_ENV=production webpack --config config/webpack.config.js"
+    "webpack-prod": "NODE_ENV=production webpack --config config/webpack.config.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@babel/core": "^7.1.2",
@@ -115,7 +117,8 @@
     "webpack-cli": "^3.1.0",
     "webpack-stats-plugin": "^0.2.1",
     "worker-loader": "^2.0.0",
-    "xterm": "^3.5.0"
+    "xterm": "^3.5.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@gitlab/eslint-config": "^1.2.0",
@@ -158,5 +161,6 @@
     "nodemon": "^1.18.4",
     "prettier": "1.15.2",
     "webpack-dev-server": "^3.1.10"
-  }
+  },
+  "snyk": true
 }
