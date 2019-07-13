@@ -112,7 +112,7 @@ gem 'hamlit', '~> 2.8.8'
 # Locked until https://github.com/carrierwaveuploader/carrierwave/pull/2332/files is merged.
 # config/initializers/carrierwave_patch.rb can be removed once that change is released.
 gem 'carrierwave', '= 1.2.3'
-gem 'mini_magick'
+gem 'mini_magick', '>= 4.9.4'
 
 # for backups
 gem 'fog-aws', '~> 2.0.1'
