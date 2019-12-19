@@ -116,10 +116,10 @@ gem 'mini_magick'
 
 # for backups
 gem 'fog-aws', '~> 2.0.1'
-gem 'fog-core', '~> 1.44'
+gem 'fog-core', '~> 1.45', '>= 1.45.0'
 gem 'fog-google', '~> 1.7.1'
-gem 'fog-local', '~> 0.3'
-gem 'fog-openstack', '~> 0.1'
+gem 'fog-local', '~> 0.3', '>= 0.3.1'
+gem 'fog-openstack', '~> 0.1', '>= 0.1.21'
 gem 'fog-rackspace', '~> 0.1.1'
 gem 'fog-aliyun', '~> 0.2.0'
 
