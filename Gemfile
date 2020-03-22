@@ -66,7 +66,7 @@ gem 'rack-oauth2', '~> 1.2.1'
 gem 'jwt', '~> 1.5.6'
 
 # Spam and anti-bot protection
-gem 'recaptcha', '~> 3.0', require: 'recaptcha/rails'
+gem 'recaptcha', '3.0.0'
 gem 'akismet', '~> 2.0'
 
 # Two-factor authentication
@@ -186,7 +186,7 @@ gem 'redis-namespace', '~> 1.6.0'
 gem 'rufus-scheduler', '~> 3.4'
 
 # HTTP requests
-gem 'httparty', '~> 0.13.3'
+gem 'httparty', '~> 0.14.0'
 
 # Colored output to console
 gem 'rainbow', '~> 3.0'
@@ -221,13 +221,13 @@ gem 'connection_pool', '~> 2.0'
 gem 'discordrb-webhooks-blackst0ne', '~> 3.3', require: false
 
 # HipChat integration
-gem 'hipchat', '~> 1.5.0'
+gem 'hipchat', '~> 1.5.2'
 
 # JIRA integration
 gem 'jira-ruby', '~> 1.4'
 
 # Flowdock integration
-gem 'flowdock', '~> 0.7'
+gem 'flowdock', '~> 0.7', '>= 0.7.1'
 
 # Slack integration
 gem 'slack-notifier', '~> 1.5.1'
@@ -281,7 +281,7 @@ gem 'uglifier', '~> 2.7.2'
 
 gem 'addressable', '~> 2.5.2'
 gem 'font-awesome-rails', '~> 4.7'
-gem 'gemojione', '~> 3.3'
+gem 'gemojione', '~> 3.3', '>= 3.3.0'
 gem 'gon', '~> 6.2'
 gem 'jquery-atwho-rails', '~> 1.3.2'
 gem 'request_store', '~> 1.3'
@@ -298,7 +298,7 @@ gem 'premailer-rails', '~> 1.9.7'
 gem 'ruby_parser', '~> 3.8', require: false
 gem 'rails-i18n', gem_versions['rails-i18n']
 gem 'gettext_i18n_rails', '~> 1.8.0'
-gem 'gettext_i18n_rails_js', '~> 1.3'
+gem 'gettext_i18n_rails_js', '~> 1.3', '>= 1.3.0'
 gem 'gettext', '~> 3.2.2', require: false, group: :development
 
 gem 'batch-loader', '~> 1.2.2'
@@ -315,7 +315,7 @@ gem 'gitlab-sidekiq-fetcher', require: 'sidekiq-reliable-fetch'
 # Metrics
 group :metrics do
   gem 'method_source', '~> 0.8', require: false
-  gem 'influxdb', '~> 0.2', require: false
+  gem 'influxdb', '~> 0.2', '>= 0.2.3', require: false
 
   # Prometheus
   gem 'prometheus-client-mmap', '~> 0.9.4'
@@ -374,7 +374,7 @@ group :development, :test do
 
   gem 'scss_lint', '~> 0.56.0', require: false
   gem 'haml_lint', '~> 0.28.0', require: false
-  gem 'simplecov', '~> 0.14.0', require: false
+  gem 'simplecov', '~> 0.14.1', require: false
   gem 'bundler-audit', '~> 0.5.0', require: false
 
   gem 'benchmark-ips', '~> 2.3.0', require: false
