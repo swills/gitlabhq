@@ -135,7 +135,7 @@ GEM
     connection_pool (2.2.2)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
-    crass (1.0.4)
+    crass (1.0.6)
     creole (0.5.0)
     css_parser (1.5.0)
       addressable
@@ -479,8 +479,8 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
-    nokogumbo (1.5.0)
-      nokogiri
+    nokogumbo (2.0.2)
+      nokogiri (~> 1.8, >= 1.8.4)
     numerizer (0.1.1)
     oauth (0.5.4)
     oauth2 (1.4.0)
@@ -778,10 +778,10 @@ GEM
       et-orbi (~> 1.0)
     rugged (0.27.5)
     safe_yaml (1.0.4)
-    sanitize (4.6.6)
+    sanitize (5.2.1)
       crass (~> 1.0.2)
-      nokogiri (>= 1.4.4)
-      nokogumbo (~> 1.4)
+      nokogiri (>= 1.8.0)
+      nokogumbo (~> 2.0)
     sass (3.5.5)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -1128,7 +1128,7 @@ DEPENDENCIES
   ruby_parser (~> 3.8)
   rufus-scheduler (~> 3.4)
   rugged (~> 0.27)
-  sanitize (~> 4.6)
+  sanitize (~> 5.2, >= 5.2.1)
   sass-rails (~> 5.0.6)
   scss_lint (~> 0.56.0)
   seed-fu (~> 2.3.7)
@@ -1169,4 +1169,4 @@ DEPENDENCIES
   wikicloth (= 0.8.1)
 
 BUNDLED WITH
-   1.17.1
+   1.17.3
