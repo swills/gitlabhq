@@ -86,7 +86,7 @@
     "raphael": "^2.2.7",
     "raven-js": "^3.22.1",
     "raw-loader": "^0.5.1",
-    "sanitize-html": "^1.16.1",
+    "sanitize-html": "^2.0.0",
     "select2": "3.5.2-browserify",
     "sha1": "^1.1.1",
     "smooshpack": "^0.0.53",
