@@ -82,7 +82,7 @@
     "mousetrap": "^1.4.6",
     "pikaday": "^1.6.1",
     "popper.js": "^1.14.3",
-    "prismjs": "^1.6.0",
+    "prismjs": "^1.23.0",
     "raphael": "^2.2.7",
     "raven-js": "^3.22.1",
     "raw-loader": "^0.5.1",
