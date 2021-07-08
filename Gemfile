@@ -124,7 +124,7 @@ gem 'fog-rackspace', '~> 0.1.1'
 gem 'fog-aliyun', '~> 0.2.0'
 
 # for Google storage
-gem 'google-api-client', '~> 0.23'
+gem 'google-api-client', '~> 0.23', '>= 0.23.4'
 
 # for aws storage
 gem 'unf', '~> 0.1.4'
@@ -279,7 +279,7 @@ gem 'rack-proxy', '~> 0.6.0'
 gem 'sass-rails', '~> 5.0.6'
 gem 'uglifier', '~> 2.7.2'
 
-gem 'addressable', '~> 2.5.2'
+gem 'addressable', '~> 2.8.0'
 gem 'font-awesome-rails', '~> 4.7'
 gem 'gemojione', '~> 3.3'
 gem 'gon', '~> 6.2'
@@ -360,8 +360,8 @@ group :development, :test do
   # Generate Fake data
   gem 'ffaker', '~> 2.10'
 
-  gem 'capybara', '~> 2.15'
-  gem 'capybara-screenshot', '~> 1.0.0'
+  gem 'capybara', '~> 2.15', '>= 2.15.1'
+  gem 'capybara-screenshot', '~> 1.0.14'
   gem 'selenium-webdriver', '~> 3.12'
 
   gem 'spring', '~> 2.0.0'
@@ -404,7 +404,7 @@ group :test do
   gem 'rspec_junit_formatter'
 end
 
-gem 'octokit', '~> 4.9'
+gem 'octokit', '~> 4.9', '>= 4.9.0'
 
 gem 'mail_room', '~> 0.9.1'
 
