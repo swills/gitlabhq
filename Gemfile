@@ -438,7 +438,7 @@ end
 gem 'gitaly-proto', '~> 1.3.0', require: 'gitaly'
 gem 'grpc', '~> 1.15.0'
 
-gem 'google-protobuf', '~> 3.6'
+gem 'google-protobuf', '~> 3.19', '>= 3.19.2'
 
 gem 'toml-rb', '~> 1.0.0', require: false
 
