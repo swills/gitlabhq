@@ -178,7 +178,7 @@ gem 'state_machines-activerecord', '~> 0.5.1'
 gem 'acts-as-taggable-on', '~> 5.0'
 
 # Background jobs
-gem 'sidekiq', '~> 5.2.1'
+gem 'sidekiq', '~> 6.4.0'
 gem 'sidekiq-cron', '~> 0.6.0'
 gem 'redis-namespace', '~> 1.6.0'
 
@@ -310,7 +310,7 @@ gem 'peek-mysql2', '~> 1.1.0', group: :mysql
 gem 'peek-pg', '~> 1.3.0', group: :postgres
 gem 'peek-rblineprof', '~> 0.2.0'
 gem 'peek-redis', '~> 1.2.0'
-gem 'gitlab-sidekiq-fetcher', require: 'sidekiq-reliable-fetch'
+gem 'gitlab-sidekiq-fetcher', '>= 0.6.0', require: 'sidekiq-reliable-fetch'
 
 # Metrics
 group :metrics do
