@@ -16,7 +16,7 @@ gem_versions['rack']                            = rails5? ? '2.0.6' : '1.6.11'
 
 source 'https://rubygems.org'
 
-gem 'rails', gem_versions['rails']
+gem 'rails', '>= 5.2.8.1', gem_versions['rails']
 gem 'rails-deprecated_sanitizer', '~> 1.0.3'
 
 # Improves copy-on-write performance for MRI
@@ -103,7 +103,7 @@ gem 'graphiql-rails', '~> 1.4.10'
 gem 'hashie-forbidden_attributes'
 
 # Pagination
-gem 'kaminari', '~> 1.0'
+gem 'kaminari', '~> 1.0', '>= 1.0.1'
 
 # HAML
 gem 'hamlit', '~> 2.8.8'
@@ -175,7 +175,7 @@ end
 gem 'state_machines-activerecord', '~> 0.5.1'
 
 # Issue tags
-gem 'acts-as-taggable-on', '~> 5.0'
+gem 'acts-as-taggable-on', '~> 5.0', '>= 5.0.0'
 
 # Background jobs
 gem 'sidekiq', '~> 5.2.1'
@@ -298,7 +298,7 @@ gem 'premailer-rails', '~> 1.9.7'
 gem 'ruby_parser', '~> 3.8', require: false
 gem 'rails-i18n', gem_versions['rails-i18n']
 gem 'gettext_i18n_rails', '~> 1.8.0'
-gem 'gettext_i18n_rails_js', '~> 1.3'
+gem 'gettext_i18n_rails_js', '~> 1.3', '>= 1.3.0'
 gem 'gettext', '~> 3.2.2', require: false, group: :development
 
 gem 'batch-loader', '~> 1.2.2'
