@@ -47,19 +47,19 @@ gem 'faraday', '~> 0.12'
 gem 'devise', '~> 4.4'
 gem 'doorkeeper', '~> 4.3'
 gem 'doorkeeper-openid_connect', '~> 1.5'
-gem 'omniauth', '~> 1.8'
+gem 'omniauth', '~> 2.0', '>= 2.0.0'
 gem 'omniauth-auth0', '~> 2.0.0'
 gem 'omniauth-azure-oauth2', '~> 0.0.9'
 gem 'omniauth-cas3', '~> 1.1.4'
 gem 'omniauth-facebook', '~> 4.0.0'
-gem 'omniauth-github', '~> 1.3'
-gem 'omniauth-gitlab', '~> 1.0.2'
+gem 'omniauth-github', '~> 2.0', '>= 2.0.0'
+gem 'omniauth-gitlab', '~> 3.0.0'
 gem 'omniauth-google-oauth2', '~> 0.5.3'
 gem 'omniauth-kerberos', '~> 0.3.0', group: :kerberos
 gem 'omniauth-oauth2-generic', '~> 0.2.2'
-gem 'omniauth-saml', '~> 1.10'
+gem 'omniauth-saml', '~> 2.0', '>= 2.0.0'
 gem 'omniauth-shibboleth', '~> 1.3.0'
-gem 'omniauth-twitter', '~> 1.4'
+gem 'omniauth-twitter', '~> 1.4', '>= 1.4.0'
 gem 'omniauth_crowd', '~> 2.2.0'
 gem 'omniauth-authentiq', '~> 0.3.3'
 gem 'rack-oauth2', '~> 1.2.1'
@@ -87,7 +87,7 @@ gem 'gpgme', '~> 2.0.18'
 # LDAP Auth
 # GitLab fork with several improvements to original library. For full list of changes
 # see https://github.com/intridea/omniauth-ldap/compare/master...gitlabhq:master
-gem 'gitlab_omniauth-ldap', '~> 2.0.4', require: 'omniauth-ldap'
+gem 'gitlab_omniauth-ldap', '~> 2.2.0', require: 'omniauth-ldap'
 gem 'net-ldap'
 
 # API
