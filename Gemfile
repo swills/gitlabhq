@@ -186,7 +186,7 @@ gem 'redis-namespace', '~> 1.6.0'
 gem 'rufus-scheduler', '~> 3.4'
 
 # HTTP requests
-gem 'httparty', '~> 0.13.3'
+gem 'httparty', '~> 0.21.0'
 
 # Colored output to console
 gem 'rainbow', '~> 3.0'
@@ -221,13 +221,13 @@ gem 'connection_pool', '~> 2.0'
 gem 'discordrb-webhooks-blackst0ne', '~> 3.3', require: false
 
 # HipChat integration
-gem 'hipchat', '~> 1.5.0'
+gem 'hipchat', '~> 1.5.2'
 
 # JIRA integration
 gem 'jira-ruby', '~> 1.4'
 
 # Flowdock integration
-gem 'flowdock', '~> 0.7'
+gem 'flowdock', '~> 0.7', '>= 0.7.1'
 
 # Slack integration
 gem 'slack-notifier', '~> 1.5.1'
