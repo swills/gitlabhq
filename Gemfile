@@ -178,8 +178,8 @@ gem 'state_machines-activerecord', '~> 0.5.1'
 gem 'acts-as-taggable-on', '~> 5.0'
 
 # Background jobs
-gem 'sidekiq', '~> 5.2.1'
-gem 'sidekiq-cron', '~> 0.6.0'
+gem 'sidekiq', '~> 7.1.3'
+gem 'sidekiq-cron', '~> 0.6.1'
 gem 'redis-namespace', '~> 1.6.0'
 
 # Cron Parser
