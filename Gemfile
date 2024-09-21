@@ -167,7 +167,7 @@ group :unicorn do
 end
 
 group :puma do
-  gem 'puma', '~> 3.12', require: false
+  gem 'puma', '~> 5.6', '>= 5.6.9', require: false
   gem 'puma_worker_killer', require: false
 end
 
