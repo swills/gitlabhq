@@ -175,11 +175,11 @@ end
 gem 'state_machines-activerecord', '~> 0.5.1'
 
 # Issue tags
-gem 'acts-as-taggable-on', '~> 5.0'
+gem 'acts-as-taggable-on', '~> 12.0', '>= 12.0.0'
 
 # Background jobs
 gem 'sidekiq', '~> 5.2.1'
-gem 'sidekiq-cron', '~> 0.6.0'
+gem 'sidekiq-cron', '~> 2.0.0'
 gem 'redis-namespace', '~> 1.6.0'
 
 # Cron Parser
@@ -296,7 +296,7 @@ gem 'premailer-rails', '~> 1.9.7'
 
 # I18n
 gem 'ruby_parser', '~> 3.8', require: false
-gem 'rails-i18n', gem_versions['rails-i18n']
+gem 'rails-i18n', '>= 8.0.0', gem_versions['rails-i18n']
 gem 'gettext_i18n_rails', '~> 1.8.0'
 gem 'gettext_i18n_rails_js', '~> 1.3'
 gem 'gettext', '~> 3.2.2', require: false, group: :development
