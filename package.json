@@ -19,7 +19,7 @@
     "webpack-prod": "NODE_ENV=production webpack --config config/webpack.config.js"
   },
   "dependencies": {
-    "@babel/core": "^7.1.2",
+    "@babel/core": "^7.26.10",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-proposal-json-strings": "^7.0.0",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
@@ -82,7 +82,7 @@
     "mousetrap": "^1.4.6",
     "pikaday": "^1.6.1",
     "popper.js": "^1.14.3",
-    "prismjs": "^1.6.0",
+    "prismjs": "^1.30.0",
     "raphael": "^2.2.7",
     "raven-js": "^3.22.1",
     "raw-loader": "^0.5.1",
