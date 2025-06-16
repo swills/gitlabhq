@@ -172,7 +172,7 @@ group :puma do
 end
 
 # State machine
-gem 'state_machines-activerecord', '~> 0.5.1'
+gem 'state_machines-activerecord', '~> 0.10.0'
 
 # Issue tags
 gem 'acts-as-taggable-on', '~> 5.0'
@@ -347,7 +347,7 @@ group :development, :test do
   gem 'fuubar', '~> 2.2.0'
 
   gem 'database_cleaner', '~> 1.5.0'
-  gem 'factory_bot_rails', '~> 4.8.2'
+  gem 'factory_bot_rails', '~> 6.5.0'
   gem 'rspec-rails', '~> 3.7.0'
   gem 'rspec-retry', '~> 0.4.5'
   gem 'rspec_profiling', '~> 0.0.5'
