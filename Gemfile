@@ -16,16 +16,16 @@ gem_versions['rack']                            = rails5? ? '2.0.6' : '1.6.11'
 
 source 'https://rubygems.org'
 
-gem 'rails', gem_versions['rails']
-gem 'rails-deprecated_sanitizer', '~> 1.0.3'
+gem 'rails', '>= 7.1.0', gem_versions['rails']
+gem 'rails-deprecated_sanitizer', '~> 1.0.4'
 
 # Improves copy-on-write performance for MRI
 gem 'nakayoshi_fork', '~> 0.0.4'
 
 # Responders respond_to and respond_with
-gem 'responders', '~> 2.0'
+gem 'responders', '~> 3.0', '>= 3.0.0'
 
-gem 'sprockets', '~> 3.7.0'
+gem 'sprockets', '~> 4.2.0'
 
 # Default values for AR models
 if rails5?
@@ -39,30 +39,30 @@ gem 'mysql2', '~> 0.4.10', group: :mysql
 gem 'pg', '~> 0.18.2', group: :postgres
 
 gem 'rugged', '~> 0.27'
-gem 'grape-path-helpers', '~> 1.0'
+gem 'grape-path-helpers', '~> 1.1', '>= 1.1.0'
 
 gem 'faraday', '~> 0.12'
 
 # Authentication libraries
-gem 'devise', '~> 4.4'
-gem 'doorkeeper', '~> 4.3'
-gem 'doorkeeper-openid_connect', '~> 1.5'
-gem 'omniauth', '~> 1.8'
-gem 'omniauth-auth0', '~> 2.0.0'
-gem 'omniauth-azure-oauth2', '~> 0.0.9'
+gem 'devise', '~> 4.7', '>= 4.7.0'
+gem 'doorkeeper', '~> 4.4', '>= 4.4.0'
+gem 'doorkeeper-openid_connect', '~> 1.5', '>= 1.5.1'
+gem 'omniauth', '~> 2.1', '>= 2.1.0'
+gem 'omniauth-auth0', '~> 2.1.0'
+gem 'omniauth-azure-oauth2', '~> 0.0.10'
 gem 'omniauth-cas3', '~> 1.1.4'
-gem 'omniauth-facebook', '~> 4.0.0'
-gem 'omniauth-github', '~> 1.3'
-gem 'omniauth-gitlab', '~> 1.0.2'
-gem 'omniauth-google-oauth2', '~> 0.5.3'
-gem 'omniauth-kerberos', '~> 0.3.0', group: :kerberos
-gem 'omniauth-oauth2-generic', '~> 0.2.2'
-gem 'omniauth-saml', '~> 1.10'
+gem 'omniauth-facebook', '~> 5.0.0'
+gem 'omniauth-github', '~> 2.0', '>= 2.0.0'
+gem 'omniauth-gitlab', '~> 3.0.0'
+gem 'omniauth-google-oauth2', '~> 0.5.4'
+gem 'omniauth-kerberos', '~> 0.4.0', group: :kerberos
+gem 'omniauth-oauth2-generic', '~> 0.2.3'
+gem 'omniauth-saml', '~> 2.0', '>= 2.0.0'
 gem 'omniauth-shibboleth', '~> 1.3.0'
 gem 'omniauth-twitter', '~> 1.4'
-gem 'omniauth_crowd', '~> 2.2.0'
+gem 'omniauth_crowd', '~> 2.3.0'
 gem 'omniauth-authentiq', '~> 0.3.3'
-gem 'rack-oauth2', '~> 1.2.1'
+gem 'rack-oauth2', '~> 1.3.0'
 gem 'jwt', '~> 1.5.6'
 
 # Spam and anti-bot protection
@@ -70,13 +70,13 @@ gem 'recaptcha', '~> 3.0', require: 'recaptcha/rails'
 gem 'akismet', '~> 2.0'
 
 # Two-factor authentication
-gem 'devise-two-factor', '~> 3.0.0'
+gem 'devise-two-factor', '~> 4.1.1'
 gem 'rqrcode-rails3', '~> 0.1.7'
 gem 'attr_encrypted', '~> 3.1.0'
 gem 'u2f', '~> 0.2.1'
 
 # GitLab Pages
-gem 'validates_hostname', '~> 1.0.6'
+gem 'validates_hostname', '~> 1.0.7'
 
 # Browser detection
 gem 'browser', '~> 2.5'
@@ -87,41 +87,41 @@ gem 'gpgme', '~> 2.0.18'
 # LDAP Auth
 # GitLab fork with several improvements to original library. For full list of changes
 # see https://github.com/intridea/omniauth-ldap/compare/master...gitlabhq:master
-gem 'gitlab_omniauth-ldap', '~> 2.0.4', require: 'omniauth-ldap'
+gem 'gitlab_omniauth-ldap', '~> 2.2.0', require: 'omniauth-ldap'
 gem 'net-ldap'
 
 # API
-gem 'grape', '~> 1.1.0'
-gem 'grape-entity', '~> 0.7.1'
+gem 'grape', '~> 1.2.0'
+gem 'grape-entity', '~> 0.8.0'
 gem 'rack-cors', '~> 1.0.0', require: 'rack/cors'
 
 # GraphQL API
 gem 'graphql', '~> 1.8.0'
-gem 'graphiql-rails', '~> 1.4.10'
+gem 'graphiql-rails', '~> 1.4.11'
 
 # Disable strong_params so that Mash does not respond to :permitted?
 gem 'hashie-forbidden_attributes'
 
 # Pagination
-gem 'kaminari', '~> 1.0'
+gem 'kaminari', '~> 1.1', '>= 1.1.0'
 
 # HAML
-gem 'hamlit', '~> 2.8.8'
+gem 'hamlit', '~> 2.8.10'
 
 # Files attachments
 # Locked until https://github.com/carrierwaveuploader/carrierwave/pull/2332/files is merged.
 # config/initializers/carrierwave_patch.rb can be removed once that change is released.
-gem 'carrierwave', '= 1.2.3'
+gem 'carrierwave', '= 1.3.0'
 gem 'mini_magick'
 
 # for backups
-gem 'fog-aws', '~> 2.0.1'
+gem 'fog-aws', '~> 3.0.0'
 gem 'fog-core', '~> 1.44'
-gem 'fog-google', '~> 1.7.1'
-gem 'fog-local', '~> 0.3'
-gem 'fog-openstack', '~> 0.1'
-gem 'fog-rackspace', '~> 0.1.1'
-gem 'fog-aliyun', '~> 0.2.0'
+gem 'fog-google', '~> 1.8.0'
+gem 'fog-local', '~> 0.4', '>= 0.4.0'
+gem 'fog-openstack', '~> 0.1', '>= 0.1.22'
+gem 'fog-rackspace', '~> 0.1.2'
+gem 'fog-aliyun', '~> 0.2.1'
 
 # for Google storage
 gem 'google-api-client', '~> 0.23'
@@ -130,11 +130,11 @@ gem 'google-api-client', '~> 0.23'
 gem 'unf', '~> 0.1.4'
 
 # Seed data
-gem 'seed-fu', '~> 2.3.7'
+gem 'seed-fu', '~> 2.3.9'
 
 # Markdown and HTML processing
 gem 'html-pipeline', '~> 2.8'
-gem 'deckar01-task_list', '2.0.0'
+gem 'deckar01-task_list', '2.0.1'
 gem 'gitlab-markup', '~> 1.6.5'
 gem 'github-markup', '~> 1.7.0', require: 'github/markup'
 gem 'redcarpet', '~> 3.4'
@@ -147,7 +147,7 @@ gem 'wikicloth', '0.8.1'
 gem 'asciidoctor', '~> 1.5.8'
 gem 'asciidoctor-plantuml', '0.0.8'
 gem 'rouge', '~> 3.1'
-gem 'truncato', '~> 0.7.9'
+gem 'truncato', '~> 0.7.11'
 gem 'bootstrap_form', '~> 2.7.0'
 gem 'nokogiri', '~> 1.8.2'
 gem 'escape_utils', '~> 1.1'
@@ -168,18 +168,18 @@ end
 
 group :puma do
   gem 'puma', '~> 3.12', require: false
-  gem 'puma_worker_killer', require: false
+  gem 'puma_worker_killer', '>= 0.3.1', require: false
 end
 
 # State machine
-gem 'state_machines-activerecord', '~> 0.5.1'
+gem 'state_machines-activerecord', '~> 0.5.2'
 
 # Issue tags
 gem 'acts-as-taggable-on', '~> 5.0'
 
 # Background jobs
 gem 'sidekiq', '~> 5.2.1'
-gem 'sidekiq-cron', '~> 0.6.0'
+gem 'sidekiq-cron', '~> 0.6.1'
 gem 'redis-namespace', '~> 1.6.0'
 
 # Cron Parser
@@ -221,10 +221,10 @@ gem 'connection_pool', '~> 2.0'
 gem 'discordrb-webhooks-blackst0ne', '~> 3.3', require: false
 
 # HipChat integration
-gem 'hipchat', '~> 1.5.0'
+gem 'hipchat', '~> 1.5.3'
 
 # JIRA integration
-gem 'jira-ruby', '~> 1.4'
+gem 'jira-ruby', '~> 1.4', '>= 1.4.2'
 
 # Flowdock integration
 gem 'flowdock', '~> 0.7'
@@ -236,26 +236,26 @@ gem 'slack-notifier', '~> 1.5.1'
 gem 'hangouts-chat', '~> 0.0.5'
 
 # Asana integration
-gem 'asana', '~> 0.8.1'
+gem 'asana', '~> 0.9.0'
 
 # FogBugz integration
 gem 'ruby-fogbugz', '~> 0.2.1'
 
 # Kubernetes integration
-gem 'kubeclient', '~> 4.0.0'
+gem 'kubeclient', '~> 4.1.0'
 
 # Sanitize user input
-gem 'sanitize', '~> 4.6'
+gem 'sanitize', '~> 5.0', '>= 5.0.0'
 gem 'babosa', '~> 1.0.2'
 
 # Sanitizes SVG input
-gem 'loofah', '~> 2.2'
+gem 'loofah', '~> 2.3', '>= 2.3.0'
 
 # Working with license
 gem 'licensee', '~> 8.9'
 
 # Protect against bruteforcing
-gem 'rack-attack', '~> 4.4.1'
+gem 'rack-attack', '~> 5.0.0'
 
 # Ace editor
 gem 'ace-rails-ap', '~> 4.1.0'
@@ -274,43 +274,43 @@ gem 'chronic', '~> 0.10.2'
 gem 'chronic_duration', '~> 0.10.6'
 
 gem 'webpack-rails', '~> 0.9.10'
-gem 'rack-proxy', '~> 0.6.0'
+gem 'rack-proxy', '~> 0.6.1'
 
-gem 'sass-rails', '~> 5.0.6'
+gem 'sass-rails', '~> 5.0.7'
 gem 'uglifier', '~> 2.7.2'
 
 gem 'addressable', '~> 2.5.2'
-gem 'font-awesome-rails', '~> 4.7'
-gem 'gemojione', '~> 3.3'
-gem 'gon', '~> 6.2'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.8'
+gem 'gemojione', '~> 4.0', '>= 4.0.0'
+gem 'gon', '~> 6.2', '>= 6.2.1'
 gem 'jquery-atwho-rails', '~> 1.3.2'
 gem 'request_store', '~> 1.3'
-gem 'select2-rails', '~> 3.5.9'
+gem 'select2-rails', '~> 3.5.11'
 gem 'virtus', '~> 1.0.1'
 gem 'base32', '~> 0.3.0'
 
 # Sentry integration
 gem 'sentry-raven', '~> 2.7'
 
-gem 'premailer-rails', '~> 1.9.7'
+gem 'premailer-rails', '~> 1.10.3'
 
 # I18n
 gem 'ruby_parser', '~> 3.8', require: false
-gem 'rails-i18n', gem_versions['rails-i18n']
+gem 'rails-i18n', '>= 7.0.1', gem_versions['rails-i18n']
 gem 'gettext_i18n_rails', '~> 1.8.0'
-gem 'gettext_i18n_rails_js', '~> 1.3'
+gem 'gettext_i18n_rails_js', '~> 1.3', '>= 1.3.1'
 gem 'gettext', '~> 3.2.2', require: false, group: :development
 
 gem 'batch-loader', '~> 1.2.2'
 
 # Perf bar
-gem 'peek', '~> 1.0.1'
+gem 'peek', '~> 1.1.0'
 gem 'peek-gc', '~> 0.0.2'
-gem 'peek-mysql2', '~> 1.1.0', group: :mysql
+gem 'peek-mysql2', '~> 1.2.0', group: :mysql
 gem 'peek-pg', '~> 1.3.0', group: :postgres
 gem 'peek-rblineprof', '~> 0.2.0'
 gem 'peek-redis', '~> 1.2.0'
-gem 'gitlab-sidekiq-fetcher', require: 'sidekiq-reliable-fetch'
+gem 'gitlab-sidekiq-fetcher', '>= 0.6.0', require: 'sidekiq-reliable-fetch'
 
 # Metrics
 group :metrics do
@@ -323,23 +323,23 @@ group :metrics do
 end
 
 group :development do
-  gem 'foreman', '~> 0.84.0'
+  gem 'foreman', '~> 0.86.0'
   gem 'brakeman', '~> 4.2', require: false
 
-  gem 'letter_opener_web', '~> 1.3.0'
+  gem 'letter_opener_web', '~> 1.3.1'
   gem 'rblineprof', '~> 0.3.6', platform: :mri, require: false
 
   # Better errors handler
-  gem 'better_errors', '~> 2.5.0'
+  gem 'better_errors', '~> 2.5.1'
   gem 'binding_of_caller', '~> 0.8.0'
 
   # thin instead webrick
-  gem 'thin', '~> 1.7.0'
+  gem 'thin', '~> 2.0.0'
 end
 
 group :development, :test do
   gem 'bootsnap', '~> 1.3'
-  gem 'bullet', '~> 5.5.0', require: !!ENV['ENABLE_BULLET']
+  gem 'bullet', '~> 5.6.0', require: !!ENV['ENABLE_BULLET']
   gem 'pry-byebug', '~> 3.4.1', platform: :mri
   gem 'pry-rails', '~> 0.3.4'
 
@@ -347,10 +347,10 @@ group :development, :test do
   gem 'fuubar', '~> 2.2.0'
 
   gem 'database_cleaner', '~> 1.5.0'
-  gem 'factory_bot_rails', '~> 4.8.2'
-  gem 'rspec-rails', '~> 3.7.0'
+  gem 'factory_bot_rails', '~> 4.10.0'
+  gem 'rspec-rails', '~> 3.8.0'
   gem 'rspec-retry', '~> 0.4.5'
-  gem 'rspec_profiling', '~> 0.0.5'
+  gem 'rspec_profiling', '~> 0.0.6'
   gem 'rspec-set', '~> 0.1.3'
   gem 'rspec-parameterized', require: false
 
@@ -360,9 +360,9 @@ group :development, :test do
   # Generate Fake data
   gem 'ffaker', '~> 2.10'
 
-  gem 'capybara', '~> 2.15'
-  gem 'capybara-screenshot', '~> 1.0.0'
-  gem 'selenium-webdriver', '~> 3.12'
+  gem 'capybara', '~> 2.15', '>= 2.15.2'
+  gem 'capybara-screenshot', '~> 1.0.15'
+  gem 'selenium-webdriver', '~> 3.13', '>= 3.13.0'
 
   gem 'spring', '~> 2.0.0'
   gem 'spring-commands-rspec', '~> 1.0.4'
@@ -375,12 +375,12 @@ group :development, :test do
   gem 'scss_lint', '~> 0.56.0', require: false
   gem 'haml_lint', '~> 0.28.0', require: false
   gem 'simplecov', '~> 0.14.0', require: false
-  gem 'bundler-audit', '~> 0.5.0', require: false
+  gem 'bundler-audit', '~> 0.7.0', require: false
 
   gem 'benchmark-ips', '~> 2.3.0', require: false
 
-  gem 'license_finder', '~> 5.4', require: false
-  gem 'knapsack', '~> 1.17'
+  gem 'license_finder', '~> 5.4', '>= 5.4.1', require: false
+  gem 'knapsack', '~> 1.17', '>= 1.17.1'
 
   gem 'activerecord_sane_schema_dumper', gem_versions['activerecord_sane_schema_dumper']
 
@@ -392,33 +392,33 @@ group :development, :test do
 end
 
 group :test do
-  gem 'shoulda-matchers', '~> 3.1.2', require: false
-  gem 'email_spec', '~> 2.2.0'
+  gem 'shoulda-matchers', '~> 3.1.3', require: false
+  gem 'email_spec', '~> 2.2.1'
   gem 'json-schema', '~> 2.8.0'
   gem 'webmock', '~> 2.3.2'
-  gem 'rails-controller-testing' if rails5? # Rails5 only gem.
+  gem 'rails-controller-testing' if rails5? , '>= 1.0.3' # Rails5 only gem.
   gem 'test_after_commit', '~> 1.1' unless rails5? # Remove this gem when migrated to rails 5.0. It's been integrated to rails 5.0.
-  gem 'sham_rack', '~> 1.3.6'
+  gem 'sham_rack', '~> 1.4.0'
   gem 'concurrent-ruby', '~> 1.1'
   gem 'test-prof', '~> 0.2.5'
   gem 'rspec_junit_formatter'
 end
 
-gem 'octokit', '~> 4.9'
+gem 'octokit', '~> 4.10', '>= 4.10.0'
 
 gem 'mail_room', '~> 0.9.1'
 
 gem 'email_reply_trimmer', '~> 0.1'
-gem 'html2text'
+gem 'html2text', '>= 0.2.1'
 
 gem 'ruby-prof', '~> 0.17.0'
 gem 'rbtrace', '~> 0.4', require: false
 
 # OAuth
-gem 'oauth2', '~> 1.4'
+gem 'oauth2', '~> 1.4', '>= 1.4.11'
 
 # Health check
-gem 'health_check', '~> 2.6.0'
+gem 'health_check', '~> 2.7.0'
 
 # System information
 gem 'vmstat', '~> 2.3.0'
@@ -435,8 +435,8 @@ group :ed25519 do
 end
 
 # Gitaly GRPC client
-gem 'gitaly-proto', '~> 1.3.0', require: 'gitaly'
-gem 'grpc', '~> 1.15.0'
+gem 'gitaly-proto', '~> 1.4.0', require: 'gitaly'
+gem 'grpc', '~> 1.16.0'
 
 gem 'google-protobuf', '~> 3.6'
 
@@ -444,9 +444,9 @@ gem 'toml-rb', '~> 1.0.0', require: false
 
 # Feature toggles
 gem 'flipper', '~> 0.13.0'
-gem 'flipper-active_record', '~> 0.13.0'
-gem 'flipper-active_support_cache_store', '~> 0.13.0'
+gem 'flipper-active_record', '~> 0.17.1'
+gem 'flipper-active_support_cache_store', '~> 0.17.1'
 
 # Structured logging
-gem 'lograge', '~> 0.5'
-gem 'grape_logging', '~> 1.7'
+gem 'lograge', '~> 0.11', '>= 0.11.0'
+gem 'grape_logging', '~> 1.8', '>= 1.8.0'
