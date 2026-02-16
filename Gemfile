@@ -41,22 +41,22 @@ gem 'pg', '~> 0.18.2', group: :postgres
 gem 'rugged', '~> 0.27'
 gem 'grape-path-helpers', '~> 1.0'
 
-gem 'faraday', '~> 0.12'
+gem 'faraday', '~> 2.14', '>= 2.14.1'
 
 # Authentication libraries
 gem 'devise', '~> 4.4'
 gem 'doorkeeper', '~> 4.3'
 gem 'doorkeeper-openid_connect', '~> 1.5'
 gem 'omniauth', '~> 1.8'
-gem 'omniauth-auth0', '~> 2.0.0'
-gem 'omniauth-azure-oauth2', '~> 0.0.9'
+gem 'omniauth-auth0', '~> 2.1.0'
+gem 'omniauth-azure-oauth2', '~> 0.0.10'
 gem 'omniauth-cas3', '~> 1.1.4'
-gem 'omniauth-facebook', '~> 4.0.0'
-gem 'omniauth-github', '~> 1.3'
-gem 'omniauth-gitlab', '~> 1.0.2'
-gem 'omniauth-google-oauth2', '~> 0.5.3'
+gem 'omniauth-facebook', '~> 5.0.0'
+gem 'omniauth-github', '~> 1.4', '>= 1.4.0'
+gem 'omniauth-gitlab', '~> 1.0.4'
+gem 'omniauth-google-oauth2', '~> 0.5.4'
 gem 'omniauth-kerberos', '~> 0.3.0', group: :kerberos
-gem 'omniauth-oauth2-generic', '~> 0.2.2'
+gem 'omniauth-oauth2-generic', '~> 0.2.3'
 gem 'omniauth-saml', '~> 1.10'
 gem 'omniauth-shibboleth', '~> 1.3.0'
 gem 'omniauth-twitter', '~> 1.4'
@@ -117,14 +117,14 @@ gem 'mini_magick'
 # for backups
 gem 'fog-aws', '~> 2.0.1'
 gem 'fog-core', '~> 1.44'
-gem 'fog-google', '~> 1.7.1'
+gem 'fog-google', '~> 1.16.0'
 gem 'fog-local', '~> 0.3'
 gem 'fog-openstack', '~> 0.1'
 gem 'fog-rackspace', '~> 0.1.1'
 gem 'fog-aliyun', '~> 0.2.0'
 
 # for Google storage
-gem 'google-api-client', '~> 0.23'
+gem 'google-api-client', '~> 0.53', '>= 0.53.0'
 
 # for aws storage
 gem 'unf', '~> 0.1.4'
@@ -236,7 +236,7 @@ gem 'slack-notifier', '~> 1.5.1'
 gem 'hangouts-chat', '~> 0.0.5'
 
 # Asana integration
-gem 'asana', '~> 0.8.1'
+gem 'asana', '~> 2.0.1'
 
 # FogBugz integration
 gem 'ruby-fogbugz', '~> 0.2.1'
@@ -290,7 +290,7 @@ gem 'virtus', '~> 1.0.1'
 gem 'base32', '~> 0.3.0'
 
 # Sentry integration
-gem 'sentry-raven', '~> 2.7'
+gem 'sentry-raven', '~> 3.0', '>= 3.0.0'
 
 gem 'premailer-rails', '~> 1.9.7'
 
@@ -404,7 +404,7 @@ group :test do
   gem 'rspec_junit_formatter'
 end
 
-gem 'octokit', '~> 4.9'
+gem 'octokit', '~> 4.23', '>= 4.23.0'
 
 gem 'mail_room', '~> 0.9.1'
 
@@ -415,7 +415,7 @@ gem 'ruby-prof', '~> 0.17.0'
 gem 'rbtrace', '~> 0.4', require: false
 
 # OAuth
-gem 'oauth2', '~> 1.4'
+gem 'oauth2', '~> 1.4', '>= 1.4.8'
 
 # Health check
 gem 'health_check', '~> 2.6.0'
